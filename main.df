@@ -1,3 +1,10 @@
 playerevent("join") {
-	player.sendmessage("allplayers", "&7[&a+&7]&a%default&7]")
-}
+	ifvar.exists("not", %default_hasJoined) {
+		setvar.createvar(%default_hasJoined
+		setvar.set(%default_hasJoined, 1)
+		player.sendmessage("allplayers", "&a%default has joined for the first time!")
+		}
+	else {
+	player.sendmessage("allplayers", "&7[&a+&7]&a%default")
+	}
+	}
