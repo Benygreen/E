@@ -1,0 +1,3 @@
+playerevent("join") {
+	player.sendmessage("allplayers", "&7[&a+&7]&a%default&7]")
+}
